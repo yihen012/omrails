@@ -1,0 +1,36 @@
+<div class="topbar topbar-fixed-top">
+  <div class="topbar-inner">
+    <div class="container">
+      <!--<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>-->
+      <a class="brand" href="https://trello.com/"><img src="/assets/trello-logo.png"></a>
+
+      <div class="user-nav">
+        <ul class="right">
+        	<li><%= link_to "Sign Up", new_user_registration_path %></li>
+        	<% if user_signed_in? %>
+            <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to "Login", new_user_session_path %></li>
+          <% end %>
+        </ul>
+      </div><!--/nav-collapse-->
+    </div>
+  </div><!--navbar-inner-->
+</div><!--/navbar-->
+
+<div class="navbar">
+	<div class="navbar-container">
+    <ul class="nav">
+    	<li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "One Month Rails", ""%></li>
+      <li><%= link_to "Contact Us", ""%></li>
+    </ul>
+  </div>
+</div><!--/navbar-->
