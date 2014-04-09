@@ -1,0 +1,17 @@
+.card{
+  .card-container{
+    margin: auto;
+    width: 940px;
+
+    .inner-card{
+      h2{
+        border-bottom: 1px solid #222;
+        padding-bottom: 5px;
+      }
+
+      p{
+
+      }
+    }//inner-card
+  }//card-container
+}//card

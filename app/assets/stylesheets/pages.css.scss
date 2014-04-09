@@ -1,9 +1,14 @@
 @import 'bootstrap';
 @import 'bootstrap-responsive';
+@import url(http://fonts.googleapis.com/css?family=Cantata+One|Ruthie|Gilda+Display|Forum);
 
 body{
   background: url("beige-1.png") ;
-  font-family: Georgia,Serif;
+  font-family: 'Gilda Display',serif;
+}
+
+.filler{
+  height: 130px;
 }
 
 .container{
@@ -11,8 +16,8 @@ body{
   margin: auto;
 }
 
-.container{
-  .topbar-fixed-top{
+//Style of header
+.topbar-fixed-top{
     position: fixed;
     right: 0;
     left: 0;
@@ -47,16 +52,26 @@ body{
         }
         a.brand{
           height: 40px;
+          font-size: 35px;
+          font-family: 'Ruthie', cursive;
+          position: relative;
+          span{
+            padding-top: 18px;
+            padding-left: 5px;
+            position:absolute;
+          }
           img{
             height: 40px;
             width: 115px;
             padding-top: 5px;
+            vertical-align: text-bottom;
           }
         }//brand
 
         .user-nav{
           display: inline-block;
           float: right;
+          //height: 200px;
           ul.right{
             list-style-type: none;
             padding: 15px;
@@ -104,15 +119,12 @@ body{
       }//nav
     }//navbar-container
   }//navbar
-}//container
 
-h2{
-  margin-top: 135px;
-}
+//Style of homepage
 #homepage{
-  padding-top: 100px;
   font-size: 15px;
   overflow: hidden;
+  font-family: 'Forum',serif;
 
   .hero{
     padding-left: 10px;
@@ -128,4 +140,10 @@ h2{
     }
   }//hero
 }//homepage
+
+//Style of users pages
+.form-actions{
+  background: none;
+
+}
 

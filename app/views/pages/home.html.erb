@@ -4,6 +4,13 @@
       <div class="header">
         <h1>Welcome to Trello Dashboard</h1>
         <p>You will find customized Trello list here just for you!</p>
+        <% if current_user %>
+          <p><%= link_to"Your Cards", cards_path, class: "card-link" %></p>
+          <p><%= link_to"Create New List", new_card_path, class: "card-link" %></p>
+        <% else %>
+          <p><%= link_to"Sign Up",new_user_registration_path, class: "btn" %></p>
+          <p><%= link_to "Login", new_user_session_path, class: "btn" %></p>
+        <% end%>
       </div><!--/header-->    
     </div><!--/hero-->
   </div><!--/container-->
