@@ -4,7 +4,7 @@
       <div class="header">
         <h1>Welcome to Trello Dashboard</h1>
         <p>You will find customized Trello list here just for you!</p>
-        <% if current_user %>
+        <% if user_signed_in?%>
           <p><%= link_to"Your Cards", cards_path, class: "card-link" %></p>
           <p><%= link_to"Create New List", new_card_path, class: "card-link" %></p>
         <% else %>
