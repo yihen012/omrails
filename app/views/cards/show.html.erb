@@ -2,11 +2,14 @@
   <div class="card-container">
     <div class="inner-card">
       <h2><%= @card.name %></h2>
+      <p>Created by <%= @card.user.name %></p>
       <p>
         <%= @card.description %>
       </p>
-      <%= link_to 'Edit', edit_card_path(@card) %> |
-      <%= link_to 'Back', cards_path %>
+      <% if current_user == @card.user %>
+        <%= link_to 'Edit', edit_card_path(@card) %> |
+      <% end %>
+        <%= link_to 'Back', cards_path %>
     </div>
   </div>
 </div>

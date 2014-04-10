@@ -1,20 +1,23 @@
-<h1>Listing cards</h1>
 
-<table class= "table table-striped">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<div class="hero">
+  <h1>List of Cards</h1>
 
-  <tbody>
-    <%= render @cards %>
-  </tbody>
-</table>
+  <table class= "table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Action</th>
+        <th></th>
+      </tr>
+    </thead>
 
+    <tbody>
+      <%= render @cards %>
+    </tbody>
+  </table>
 <br />
 
-<%= link_to 'New Card', new_card_path %>
+<%= link_to 'New Card', new_card_path, class:"btn btn-primary" %>
+
+</div>

@@ -1,16 +1,24 @@
 <div id="homepage">
   <div class="container">
+    <div class="title">
+      <h1>Welcome to Trello Dashboard</h1>
+    </div>
     <div class="hero">
       <div class="header">
-        <h1>Welcome to Trello Dashboard</h1>
-        <p>You will find customized Trello list here just for you!</p>
+        
+        <h4>You will find customized Trello list here just for you!</h4>
+        
+        <div class="links">
         <% if user_signed_in?%>
-          <p><%= link_to"Your Cards", cards_path, class: "card-link" %></p>
-          <p><%= link_to"Create New List", new_card_path, class: "card-link" %></p>
+          <%= link_to"Go To Your Cards", cards_path, class: "btn btn-primary" %>
+          <%= link_to"Create New Card", new_card_path, class: "btn btn-info" %>
         <% else %>
-          <p><%= link_to"Sign Up",new_user_registration_path, class: "btn" %></p>
-          <p><%= link_to "Login", new_user_session_path, class: "btn" %></p>
+          <%= link_to"Sign Up",new_user_registration_path, class: "btn btn-primary" %>
+          <%= link_to "Login", new_user_session_path, class: "btn btn-info" %>
+          
         <% end%>
+        </div>
+
       </div><!--/header-->    
     </div><!--/hero-->
   </div><!--/container-->
