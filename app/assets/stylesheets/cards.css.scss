@@ -8,3 +8,24 @@
 
   }
 }//hero
+
+.card{
+  .card-container{
+    .side-info{
+        float: left;
+        background-color: #FFFFF0;
+        padding: 10px;
+
+        .side-container{
+          h2{
+            font-size: 20px;
+            font-weight: 900;
+          }
+        }//side-container
+      }//side-info
+  }//card-container
+}//card
+
+.clearfix{
+  clear: both;
+}

@@ -1,15 +1,22 @@
 <div class="card">
   <div class="card-container">
-    <div class="inner-card">
-      <h2><%= @card.name %></h2>
-      <p>Created by <%= @card.user.name %></p>
-      <p>
-        <%= @card.description %>
-      </p>
-      <% if current_user == @card.user %>
-        <%= link_to 'Edit', edit_card_path(@card) %> |
-      <% end %>
-        <%= link_to 'Back', cards_path %>
-    </div>
-  </div>
-</div>
+    <div class="side-info">
+      <div class="side-container">
+        <% if @card.image.blank? == false %>
+          <%= image_tag @card.image.url(:medium) %>
+        <% end %>
+        <h2><%= @card.name %></h2>
+        <p>Created by <%= @card.user.name %></p>
+        <p>
+          <%= @card.description %>
+        </p>
+        <% if current_user == @card.user %>
+          <%= link_to 'Edit', edit_card_path(@card) %> |
+        <% end %>
+          <%= link_to 'Back', cards_path %>
+      </div><!--side-container-->
+    </div> <!--side-info-->
+  </div><!--/card-container-->
+</div><!--/card-->
+
+<div class="clearfix"></div>

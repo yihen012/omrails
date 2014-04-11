@@ -1,6 +1,13 @@
 <tr>
   <td><%= card.name %></td>
   <td><%= card.description %></td>
+  <% if card.image.blank? && current_user == card.user %>
+    <td><%= file_field_tag :image, label: "Upload image" %></td>
+  <% elsif card.image.blank? %>
+    <td></td>
+  <% else %>
+     <td><%= image_tag card.image.url(:thumb) %></td>
+  <% end %>
   <% if current_user == card.user %>
     <td>
       <div class="btn-group">
