@@ -175,3 +175,36 @@ footer{
   margin-top: 100px;  
 }
 
+/* Required for jQuery Masonry */
+#cards{
+  padding: 20px;
+  .box {
+    margin: 5px;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 1.4em;
+    float: left;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+         border-radius: 5px;
+    box-shadow: 1px 1px 10px #444;
+    width: 214px;
+    background-color: #fff ;
+
+    img {
+      width: 100%;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+
+    .btn-group {
+      margin: 10px 0 5px;
+    }
+  }//box
+  
+}//cards
+
+
+
+

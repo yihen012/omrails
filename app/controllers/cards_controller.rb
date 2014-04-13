@@ -3,7 +3,7 @@ class CardsController < ApplicationController
   # GET /cards
   # GET /cards.json
   def index
-    @cards = Card.all
+    @cards = Card.order("created_at desc")
 
     respond_to do |format|
       format.html # index.html.erb
