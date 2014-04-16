@@ -1,6 +1,6 @@
 @import 'bootstrap';
 @import 'bootstrap-responsive';
-@import url(http://fonts.googleapis.com/css?family=Cantata+One|Ruthie|Gilda+Display|Forum);
+@import url(http://fonts.googleapis.com/css?family=Cantata+One|Ruthie|Gilda+Display|Forum|Fredericka+the+Great);
 
 body{
   background: url("beige-1.png") ;
@@ -138,32 +138,38 @@ body{
     h1{
       color: #54301a;
       padding-bottom: 5px;
+      font-family: "Fredericka the Great", serif;
     }
   }//title
   
   .hero{
     padding-left: 10px;
-    float: left;
-
-    
-
-    p{
-      
-    }
+   
 
     .links{
-      display: inline-block;
-      padding-top: 30px !important;
-      .btn{
-        margin-right: 10px;
-        padding: 10px;
-        font-size: 18px;
         
+        padding-top: 20px !important;
+        .btn{
+          margin-right: 10px;
+          padding: 10px;
+          font-size: 18px;
+        }
+      }
+    
+    .customized-option, .trello-option{
+      padding-top: 30px;
+
+      label{
+        font-size: 18px;
+        font-weight: bold;
       }
     }
-
-    
   }//hero
+
+  .faq{
+    font-size: 15px;
+    padding-left: 15px;
+  }//faq
 }//homepage
 
 //Style of users pages
