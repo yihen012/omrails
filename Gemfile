@@ -1,11 +1,19 @@
 source 'https://rubygems.org'
 
+#Core
 gem 'rails', '3.2.16'
 gem 'jquery-rails'
+
+#Authentication/Authorization
 gem 'devise'
+
+#Ruby Trello API
+gem 'omniauth-trello'
+
+#Utilities
 gem 'simple_form'
 gem 'activerecord-import'
-gem "paperclip", "~> 4.1"
+gem 'paperclip', '~> 4.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

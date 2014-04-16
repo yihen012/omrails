@@ -1,5 +1,5 @@
 class CardsController < ApplicationController
-  before_filter :authenticate_user!, except: [:index]
+  #before_filter :authenticate_user!, except: [:index]
   # GET /cards
   # GET /cards.json
   def index

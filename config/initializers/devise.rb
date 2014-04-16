@@ -229,7 +229,7 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
+  #config.omniauth :trello, "360be6ac4d71128655a3f654f7bad296", "36e464e6c482afec717177b16d106c7ef2433150af2859778d484aa9a95b27dc",:strategy_class => OmniAuth::Strategies::Trello
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

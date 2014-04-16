@@ -1,9 +1,15 @@
 Omrails::Application.routes.draw do
+  
+
   resources :cards
 
   devise_for :users
 
+  get "authentications/create"
+  match '/auth/:provider/callback', :to => 'cards#index'
+                                       
   get 'about' => 'pages#about'
+  
   root :to => 'pages#home'
 
   # The priority is based upon order of creation:
