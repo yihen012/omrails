@@ -9,6 +9,7 @@ gem 'devise'
 
 #Ruby Trello API
 gem 'omniauth-trello'
+gem 'omniauth'
 
 #Utilities
 gem 'simple_form'

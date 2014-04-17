@@ -1,4 +1,4 @@
 class TrelloController < ApplicationController
-  def home
+  def show
   end
 end

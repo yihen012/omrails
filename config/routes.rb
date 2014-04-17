@@ -6,7 +6,7 @@ Omrails::Application.routes.draw do
   devise_for :users
 
   get "authentications/create"
-  match '/auth/:provider/callback', :to => 'cards#index'
+  match '/auth/:provider/callback', :to => 'pages#index'
                                        
   get 'about' => 'pages#about'
   
