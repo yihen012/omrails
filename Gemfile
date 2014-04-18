@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 #Core
 gem 'rails', '3.2.16'
 gem 'jquery-rails'
-gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv-rails', :groups => [:development, :test, :production]
 
 #Authentication/Authorization
 gem 'devise'
