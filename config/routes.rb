@@ -1,13 +1,11 @@
 Omrails::Application.routes.draw do
-  
-
   resources :cards
 
   devise_for :users
 
   get "authentications/create"
   match '/auth/:provider/callback', :to => 'trello#show'
-                                       
+                                     
   get 'about' => 'pages#about'
   
   root :to => 'pages#home'

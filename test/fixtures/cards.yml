@@ -1,7 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  user_id: one
+  name: name1
   description: MyString
 
 two:
+  user_id: two
+  name: name2
   description: MyString
