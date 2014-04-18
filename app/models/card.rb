@@ -1,6 +1,6 @@
 class Card < ActiveRecord::Base
   belongs_to :user
-  attr_accessible :description, :name, :image
+  attr_accessible :description, :name, :image, :image_file_name
 
   has_attached_file :image, :styles => {:large => "640x480#", :medium => "200x200#", :thumb => "100x100#"}
 

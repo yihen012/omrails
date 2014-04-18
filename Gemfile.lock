@@ -150,6 +150,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   jquery-rails
+  omniauth
   omniauth-trello
   paperclip (~> 4.1)
   pg
