@@ -21,6 +21,12 @@ gem 'paperclip', '~> 4.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :production do
   gem 'pg'
+  gem 'rspec-rails', '2.0.1'
+end
+
+group :test do
+  gem 'rspec', '2.0.1'
+  gem 'webrat', '0.7.1'
 end
 
 group :development, :test do
