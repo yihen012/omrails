@@ -5,6 +5,12 @@ gem 'rails', '3.2.16'
 gem 'jquery-rails'
 gem 'dotenv-rails', :groups => [:development, :test, :production]
 
+#Automated Testing
+ gem "ZenTest"
+ gem "autotest-rails-pure"
+ gem "autotest-growl"
+ gem "autotest-fsevent"
+
 #Authentication/Authorization
 gem 'devise'
 
@@ -21,16 +27,15 @@ gem 'paperclip', '~> 4.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :production do
   gem 'pg'
-  gem 'rspec-rails', '2.0.1'
 end
 
 group :test do
-  gem 'rspec', '2.0.1'
   gem 'webrat', '0.7.1'
 end
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.0.0.beta'
 end
 
 group :assets do
