@@ -5,12 +5,6 @@ gem 'rails', '3.2.16'
 gem 'jquery-rails'
 gem 'dotenv-rails', :groups => [:development, :test, :production]
 
-#Automated Testing
- gem "ZenTest"
- gem "autotest-rails-pure"
- gem "autotest-growl"
- gem "autotest-fsevent"
-
 #Authentication/Authorization
 gem 'devise'
 
