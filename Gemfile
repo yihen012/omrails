@@ -25,6 +25,7 @@ end
 
 group :test do
   gem 'webrat', '0.7.1'
+  gem 'database_cleaner'
 end
 
 group :development, :test do

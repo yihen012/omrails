@@ -1,13 +1,20 @@
 Omrails::Application.routes.draw do
-  resources :cards
+  resources :cards 
+
+
+  get 'cards/show' => 'cards#show'
+  get 'cards/index' => 'cards#index'
+  post 'cards/create' => 'cards#create'
+
 
   devise_for :users
 
   get "authentications/create"
   match '/auth/:provider/callback', :to => 'trello#show'
                                      
-  get 'about' => 'pages#about'
-  
+  get 'pages/about' => 'pages#about', :as => 'about'
+  get 'pages/home'  => 'pages#home'
+    
   root :to => 'pages#home'
 
   # The priority is based upon order of creation:
